@@ -1,0 +1,24 @@
+@use 'blocks/header';
+@use 'blocks/footer';
+@use 'variables'as *;
+@use 'blocks/buttons';
+@use 'pages/subscribe';
+@use 'pages' as *;
+@use 'blocks/form';
+@use 'responsive';
+/*
+@import 'global';
+@import 'mixins';
+@import 'blocks/footer';
+@import 'blocks/buttons';
+@import 'blocks/card';
+@import 'blocks/hero';
+@import 'blocks/form';
+@import 'blocks/grid';
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/services';
+@import 'pages/contact';
+@import 'responsive';*/
+
+

@@ -1,0 +1,56 @@
+@use '../variables'as *;
+.button {
+  padding: 8px 20px;
+  border-radius: 5px;
+  border: 1px solid;
+  cursor: pointer;
+
+  // Модификатор для белой кнопки
+  &--white {
+    background-color: $color-white;
+    color: $color-blue;  // Белый текст
+    &:hover {
+      box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.25);
+    }
+
+    // Модификатор для прозрачной белой кнопки
+    &--transparent {
+
+      background-color: transparent;
+      color: $color-white;  // Белый текст
+      border: 1px solid $color-white;
+    }
+  }
+
+  // Модификатор для синей кнопки
+  &--blue {
+
+    background-color: $color-blue;
+    color: $color-white;  // Белый текст
+    &:hover {
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    // Модификатор для прозрачной синей кнопки
+    &--transparent {
+      background-color: transparent;
+      color: $color-black;  // Черн ый текст
+      border-color: $color-black;
+    }
+  }
+}
+.registration-form__button {
+  padding: 12px 24px;
+  border-radius: 5px;
+  border: 1px solid $color-blue;
+  cursor: pointer;
+  &--white {
+
+    &--transparent {
+      border-radius: 5px;
+      background-color: transparent;
+      border: 1px solid $color-white;
+      color: $color-white;
+    }
+  }
+}

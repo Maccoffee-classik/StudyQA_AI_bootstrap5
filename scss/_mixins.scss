@@ -1,0 +1,21 @@
+/*ШРИФТ*/
+@mixin montserrat($weight: 400) {
+  font-family: "Montserrat", sans-serif;
+  font-weight: $weight;
+}
+@mixin coresans($weight: 800) {
+  font-family: "Core Sans C", sans-serif;
+  font-weight: $weight;
+}
+/*
+p {
+  @include montserrat(400); // Regular
+}
+
+h1 {
+  @include montserrat(700); // Bold
+}
+
+button {
+  @include montserrat(500); // Medium
+}*/

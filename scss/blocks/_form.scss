@@ -1,0 +1,35 @@
+@use '../variables'as *;
+.registration-form {
+
+  &__input {
+    font-size: 16px;
+    padding: 12px;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    background: transparent;
+  }
+    // Модификатор для прозрачного белого инпута
+  &__input--white-transparent {
+      border-color: $color-white;
+      background: transparent;
+
+      &::placeholder {
+        color: $color-white50pr;
+        font-size: 16px;
+      }
+    }
+
+    // Модификатор для прозрачного черного инпута
+  &__input--black-transparent {
+      border-color: $color-black;
+      background: transparent;
+
+      &::placeholder {
+        color: $color-grey;
+        font-size: 16px;
+      }
+    }
+
+  }
+

@@ -1,0 +1,28 @@
+$small-screen: 576px;
+$medium-screen: 768px;
+$large-screen: 992px;
+$extra-large-screen: 1200px;
+
+.container {
+  /*background-color: lightblue;*/
+
+  // Для экранов маленького размера
+  @media (max-width: $small-screen) {
+   /* background-color: lightgreen;*/
+  }
+
+  // Для экранов среднего размера
+  @media (max-width: $medium-screen) {
+  /*  background-color: lightcoral;*/
+  }
+
+  // Для экранов большого размера
+  @media (max-width: $large-screen) {
+   /* background-color: lightpink;*/
+  }
+
+  // Для экранов очень большого размера
+  @media (max-width: $extra-large-screen) {
+   /* background-color: lightgoldenrodyellow;*/
+  }
+}

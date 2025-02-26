@@ -1,0 +1,71 @@
+@use '../variables'as *;
+@use '../mixins'as *;
+@use '../responsive'as *;
+.footer {
+  color: $color-white;
+  background-color: $color-blue;
+  border-radius:  25px 25px 0 0;
+  max-width: calc(1320px + 80px);
+  margin: auto;
+  padding: 50px;
+
+  h5 {
+    @include montserrat(600);
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 15px;
+  }
+
+  a {
+    @include montserrat(400);
+    font-size: 14px;
+    line-height: 150%;
+    color: $color-white;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+/*
+  form {
+    display: flex;
+    input {
+      flex-grow: 1;
+      border: none;
+      padding: 8px;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #ffffff;
+      color: #003366;
+      padding: 8px 12px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+  }
+*/
+  .small {
+    font-size: 12px;
+    a {
+      font-size: 12px;
+    }
+  }
+  &__social{
+    padding-left: 0;
+    list-style: none;
+  }
+  &__social-icon{
+    filter: invert(1);
+  }
+  @media (max-width: $large-screen) {
+      .copywriter {
+        flex-wrap: wrap;
+      }
+    }
+  @media (max-width: $large-screen) {
+    .registration-form__button {
+      width: 100%;
+    }
+  }
+
+}

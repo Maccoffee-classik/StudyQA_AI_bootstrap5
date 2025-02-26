@@ -1,0 +1,46 @@
+
+/*ЦВЕТА*/
+$color-blue: #2961AB;
+$color-white: #FFFFFF;
+$color-black: #000000;
+$color-grey:  #666666;
+$color-white50pr: rgba(255, 255, 255, 0.5);
+/*ГЛОБАЛЬНЫЕ КЛАССЫ*/
+.highlight {
+  color: $color-blue;
+}
+
+/*ШРИФТЫ*/
+$font-path: "../fonts/"; // Путь к папке со шрифтами
+
+@each $weight, $name in (
+        700: "Bold",
+        600: "SemiBold",
+        500: "Medium",
+        400: "Regular"
+) {
+  @font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat-#{$name}"),
+    url("#{$font-path}Montserrat-#{$name}.ttf") format("truetype");
+    font-weight: $weight;
+    font-style: normal;
+  }
+
+
+
+}
+@each $weight, $name in (
+        800: "75ExtraBold",
+
+) {
+
+@font-face {
+  font-family: "Core Sans C";
+  src: local("Core Sans C #{$name}"),
+  url("#{$font-path}CoreSansC-#{$name}.ttf") format("truetype");
+  font-weight: $weight;
+  font-style: normal;
+}}
+
+
