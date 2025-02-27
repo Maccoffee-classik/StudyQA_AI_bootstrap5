@@ -43,4 +43,18 @@ $font-path: "../fonts/"; // Путь к папке со шрифтами
   font-style: normal;
 }}
 
+@each $weight, $name in (
+        700: "Bold",
+        400: "Regular"
+
+) {
+
+  @font-face {
+    font-family: "Roboto";
+    src: local("Roboto-#{$name}"),
+    url("#{$font-path}Roboto-#{$name}.ttf") format("truetype");
+    font-weight: $weight;
+    font-style: normal;
+  }}
+
 

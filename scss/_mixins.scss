@@ -7,6 +7,10 @@
   font-family: "Core Sans C", sans-serif;
   font-weight: $weight;
 }
+@mixin roboto($weight: 700) {
+  font-family: "Roboto", sans-serif;
+  font-weight: $weight;
+}
 /*
 p {
   @include montserrat(400); // Regular

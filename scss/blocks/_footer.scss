@@ -6,8 +6,8 @@
   background-color: $color-blue;
   border-radius:  25px 25px 0 0;
   max-width: calc(1320px + 80px);
-  margin: auto;
   padding: 50px;
+  margin: 50px auto 0;
 
   h5 {
     @include montserrat(600);
@@ -26,24 +26,7 @@
       text-decoration: underline;
     }
   }
-/*
-  form {
-    display: flex;
-    input {
-      flex-grow: 1;
-      border: none;
-      padding: 8px;
-      border-radius: 5px;
-    }
-    button {
-      background-color: #ffffff;
-      color: #003366;
-      padding: 8px 12px;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-  }
-*/
+
   .small {
     font-size: 12px;
     a {

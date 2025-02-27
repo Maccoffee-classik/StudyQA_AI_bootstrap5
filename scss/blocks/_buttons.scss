@@ -1,9 +1,12 @@
 @use '../variables'as *;
+@use '../mixins'as *;
 .button {
-  padding: 8px 20px;
+  padding: 12px 24px;
   border-radius: 5px;
   border: 1px solid;
   cursor: pointer;
+  @include montserrat(400);
+  font-size: 16px;
 
   // Модификатор для белой кнопки
   &--white {
@@ -21,7 +24,14 @@
       border: 1px solid $color-white;
     }
   }
-
+  // Модификатор для прозрачной черной кнопки
+  &--black {
+    &--transparent {
+      background-color: transparent;
+      color: $color-black;  // Белый текст
+      border: 1px solid $color-black;
+    }
+  }
   // Модификатор для синей кнопки
   &--blue {
 

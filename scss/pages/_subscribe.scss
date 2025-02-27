@@ -1,18 +1,29 @@
 @use '../variables'as *;
 @use '../mixins'as *;
-@use '../responsive';
+@use '../responsive'as *;
 .subscribe {
   padding-top: 100px;
   padding-bottom: 100px;
+  @media (max-width: $large-screen) {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
   h2 {
     @include coresans(800);
     font-size: 56px;
     line-height: 120%;
+    @media (max-width: $large-screen) {
+      font-size: 40px;
+    }
   }
   p {
     @include montserrat(500);
     font-size: 18px;
     line-height: 150%;
+    @media (max-width: $large-screen) {
+      font-size: 16px;
+    }
+
 
   }
 }

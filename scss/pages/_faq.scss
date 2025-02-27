@@ -1,0 +1,18 @@
+@use '../responsive'as *;
+.section-faq-title {
+  @media (max-width: $large-screen) {
+    margin: 50px 0;
+  }
+  &__img {
+    width: 100%;
+    @media (max-width: $large-screen) {
+      width: 40%;
+    }
+  }
+
+  &__img-block {
+    @media (max-width: $large-screen) {
+      display: none;
+    }
+  }
+}
