@@ -320,6 +320,7 @@ button {
   }
 }
 
+/*@use 'pages/about1';*/
 @media (max-width: 992px) {
   .section-faq-title {
     margin: 50px 0;
@@ -361,9 +362,20 @@ button {
   flex-wrap: wrap;
   justify-content: center;
 }
+.card-group__image {
+  border-radius: 25px;
+  width: 100%;
+}
 .card-group__item {
   text-align: center;
   padding: 20px;
+}
+.card-group__item-wrapper {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  background: #fafaff;
+  border-radius: 25px;
+  padding: 32px;
+  height: 100%;
 }
 .card-group__item-image {
   margin-bottom: 24px;
@@ -374,6 +386,14 @@ button {
   font-size: 24px;
   line-height: 140%;
   margin-bottom: 24px;
+}
+.card-group__item-subtitle {
+  font-family: "Core Sans C", sans-serif;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 120%;
+  text-align: right;
+  padding: 48px 0 16px;
 }
 .card-group__item-text {
   font-family: "Montserrat", sans-serif;
