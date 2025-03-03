@@ -9,29 +9,31 @@
   width: 80%;
 }
 
-.card-group__item {
-  position: relative;
+.blog2 {
+  .card-group__item{
+    position: relative;
 
-  &:after {
-    @include coresans(800);
-    font-weight: 800;
-    font-size: 150px;
-    line-height: 130%;
-    text-align: right;
-    color: $color-blue;
-    position: absolute;
-    right: 30px;
-    top: -20%;
-  }
-  &:nth-child(1)::after {
-    content: "1";
-  }
+    &:after {
+      @include coresans(800);
+      font-weight: 800;
+      font-size: 150px;
+      line-height: 130%;
+      text-align: right;
+      color: $color-blue;
+      position: absolute;
+      right: 30px;
+      top: -20%;
+    }
+    &:nth-child(1)::after {
+      content: "1";
+    }
 
-  &:nth-child(2)::after {
-    content: "2";
-  }
+    &:nth-child(2)::after {
+      content: "2";
+    }
 
-  &:nth-child(3)::after {
-    content: "3";
+    &:nth-child(3)::after {
+      content: "3";
+    }
   }
 }

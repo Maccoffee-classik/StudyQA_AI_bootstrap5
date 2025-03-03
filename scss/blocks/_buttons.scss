@@ -32,6 +32,25 @@
       border: 1px solid $color-black;
     }
   }
+  // Модификатор для прозрачной  кнопки без бордера
+  &--no-border {
+    position: relative;
+    border:none;
+    background-color: transparent;
+    color: $color-black;  // Белый текст
+
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 40%;
+      left: 100%;
+      background: url("/img/arrow_link.svg") no-repeat;
+      width: 100%;
+      height: 100%;
+
+    }
+  }
   // Модификатор для синей кнопки
   &--blue {
 

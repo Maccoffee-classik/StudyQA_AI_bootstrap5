@@ -16,6 +16,11 @@
       font-size: 30px;
     }
   }
+  &__subtitle {
+    @include montserrat(500);
+    font-size: 18px;
+    line-height: 150%;
+  }
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -247,7 +252,13 @@
 /*Секция текстовая блог низ*/
 .marketing-block {
   padding: 112px 0;
+  &__wrapper {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
+    background: #fafaff;
+    border-radius: 25px;
+    overflow: hidden;
 
+  }
   &__title {
     @include coresans(800);
     font-size: 40px;
@@ -272,6 +283,13 @@
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
 
   }
+  &__card--insert {
+    height: 100%;
+    background: #fafaff;;
+    padding: 18px;
+    border-radius: 25px;
+    box-shadow: inset 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+  }
 
   &__card-title {
     @include coresans(800);
@@ -283,5 +301,19 @@
   &__image {
     max-width: 100%;
     border-radius: 25px;
+  }
+  &__image-wrapper-right {
+    max-width: 100%;
+    border-radius: 0 0 0 100px;
+    @media (max-width: $large-screen) {
+      display: none;
+    }
+  }
+  &__image-wrapper-left {
+    max-width: 100%;
+    border-radius: 0 100px 0 0;
+    @media (max-width: $large-screen) {
+      display: none;
+    }
   }
 }

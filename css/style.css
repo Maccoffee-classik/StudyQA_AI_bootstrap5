@@ -265,6 +265,22 @@ button {
   color: #000000;
   border: 1px solid #000000;
 }
+.button--no-border {
+  position: relative;
+  border: none;
+  background-color: transparent;
+  color: #000000;
+}
+.button--no-border:after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 40%;
+  left: 100%;
+  background: url("/img/arrow_link.svg") no-repeat;
+  width: 100%;
+  height: 100%;
+}
 .button--blue {
   background-color: #2961AB;
   color: #FFFFFF;
@@ -334,10 +350,10 @@ button {
   width: 80%;
 }
 
-.card-group__item {
+.blog2 .card-group__item {
   position: relative;
 }
-.card-group__item:after {
+.blog2 .card-group__item:after {
   font-family: "Core Sans C", sans-serif;
   font-weight: 800;
   font-weight: 800;
@@ -349,13 +365,13 @@ button {
   right: 30px;
   top: -20%;
 }
-.card-group__item:nth-child(1)::after {
+.blog2 .card-group__item:nth-child(1)::after {
   content: "1";
 }
-.card-group__item:nth-child(2)::after {
+.blog2 .card-group__item:nth-child(2)::after {
   content: "2";
 }
-.card-group__item:nth-child(3)::after {
+.blog2 .card-group__item:nth-child(3)::after {
   content: "3";
 }
 
@@ -394,6 +410,12 @@ button {
   .card-group__title {
     font-size: 30px;
   }
+}
+.card-group__subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
 }
 .card-group__list {
   display: flex;
@@ -648,6 +670,12 @@ button {
 .marketing-block {
   padding: 112px 0;
 }
+.marketing-block__wrapper {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
+  background: #fafaff;
+  border-radius: 25px;
+  overflow: hidden;
+}
 .marketing-block__title {
   font-family: "Core Sans C", sans-serif;
   font-weight: 800;
@@ -672,6 +700,13 @@ button {
   border-radius: 25px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
 }
+.marketing-block__card--insert {
+  height: 100%;
+  background: #fafaff;
+  padding: 18px;
+  border-radius: 25px;
+  box-shadow: inset 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
 .marketing-block__card-title {
   font-family: "Core Sans C", sans-serif;
   font-weight: 800;
@@ -682,6 +717,24 @@ button {
 .marketing-block__image {
   max-width: 100%;
   border-radius: 25px;
+}
+.marketing-block__image-wrapper-right {
+  max-width: 100%;
+  border-radius: 0 0 0 100px;
+}
+@media (max-width: 992px) {
+  .marketing-block__image-wrapper-right {
+    display: none;
+  }
+}
+.marketing-block__image-wrapper-left {
+  max-width: 100%;
+  border-radius: 0 100px 0 0;
+}
+@media (max-width: 992px) {
+  .marketing-block__image-wrapper-left {
+    display: none;
+  }
 }
 
 .registration-form__input {
