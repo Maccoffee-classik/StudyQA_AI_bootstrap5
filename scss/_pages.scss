@@ -97,6 +97,14 @@
   @media (max-width: $large-screen) {
     padding: 20px;
   }
+  &__title {
+    @include coresans(800);
+    font-size: 40px;
+    line-height: 120%;
+    @media (max-width: $large-screen) {
+      font-size: 30px;
+    }
+  }
   &__description {
     @include montserrat(500);
     font-size: 18px;
@@ -231,4 +239,49 @@
     }
   }
 
+}
+.wrapper-blue {
+  background-color: $color-blue;
+}
+
+/*Секция текстовая блог низ*/
+.marketing-block {
+  padding: 112px 0;
+
+  &__title {
+    @include coresans(800);
+    font-size: 40px;
+    line-height: 120%;
+    @media (max-width: $large-screen) {
+      font-size: 30px;
+    }
+  }
+
+
+  &__description {
+    @include montserrat(500);
+    font-size: 18px;
+    line-height: 150%;
+  }
+
+  &__card {
+    height: 100%;
+    background: #fafaff;;
+    padding: 18px;
+    border-radius: 25px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
+
+  }
+
+  &__card-title {
+    @include coresans(800);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 140%;
+  }
+
+  &__image {
+    max-width: 100%;
+    border-radius: 25px;
+  }
 }

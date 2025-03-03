@@ -5,6 +5,10 @@
   color: #2961AB;
 }
 
+.highlight-white {
+  color: #FFFFFF;
+}
+
 /*ШРИФТЫ*/
 @font-face {
   font-family: "Montserrat";
@@ -321,6 +325,40 @@ button {
 }
 
 /*@use 'pages/about1';*/
+.stars_bg {
+  background: url("/img/stars_bg.svg") no-repeat;
+  background-position: 35% center;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.card-group__item {
+  position: relative;
+}
+.card-group__item:after {
+  font-family: "Core Sans C", sans-serif;
+  font-weight: 800;
+  font-weight: 800;
+  font-size: 150px;
+  line-height: 130%;
+  text-align: right;
+  color: #2961AB;
+  position: absolute;
+  right: 30px;
+  top: -20%;
+}
+.card-group__item:nth-child(1)::after {
+  content: "1";
+}
+.card-group__item:nth-child(2)::after {
+  content: "2";
+}
+.card-group__item:nth-child(3)::after {
+  content: "3";
+}
+
 @media (max-width: 992px) {
   .section-faq-title {
     margin: 50px 0;
@@ -436,6 +474,17 @@ button {
 @media (max-width: 992px) {
   .insert {
     padding: 20px;
+  }
+}
+.insert__title {
+  font-family: "Core Sans C", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 120%;
+}
+@media (max-width: 992px) {
+  .insert__title {
+    font-size: 30px;
   }
 }
 .insert__description {
@@ -589,6 +638,50 @@ button {
   .faq-button-group__button {
     flex-wrap: wrap;
   }
+}
+
+.wrapper-blue {
+  background-color: #2961AB;
+}
+
+/*Секция текстовая блог низ*/
+.marketing-block {
+  padding: 112px 0;
+}
+.marketing-block__title {
+  font-family: "Core Sans C", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 120%;
+}
+@media (max-width: 992px) {
+  .marketing-block__title {
+    font-size: 30px;
+  }
+}
+.marketing-block__description {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+}
+.marketing-block__card {
+  height: 100%;
+  background: #fafaff;
+  padding: 18px;
+  border-radius: 25px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
+}
+.marketing-block__card-title {
+  font-family: "Core Sans C", sans-serif;
+  font-weight: 800;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 140%;
+}
+.marketing-block__image {
+  max-width: 100%;
+  border-radius: 25px;
 }
 
 .registration-form__input {
