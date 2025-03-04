@@ -2,7 +2,7 @@
 @use '../variables'as *;
 @use '../mixins'as *;
 .stars_bg {
-  background: url("/img/stars_bg.svg") no-repeat;
+  background: url("../img/stars_bg.svg") no-repeat;
   background-position: calc(50% - 15%) center;
 }
 .w-80 {

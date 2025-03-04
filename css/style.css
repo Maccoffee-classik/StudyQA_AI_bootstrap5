@@ -346,7 +346,7 @@ button {
 
 /*@use 'pages/about1';*/
 .stars_bg {
-  background: url("/img/stars_bg.svg") no-repeat;
+  background: url("../img/stars_bg.svg") no-repeat;
   background-position: 35% center;
 }
 
@@ -379,9 +379,14 @@ button {
   content: "3";
 }
 
+.stars_bg2 {
+  background: url("../img/stars_bg2.svg") no-repeat;
+  background-position: 35% center;
+}
+
 .blue-divider {
   height: 50px;
-  background: url("/img/relumewebflow.svg") repeat-x center, #2961AB;
+  background: url("../img/relumewebflow.svg") repeat-x center, #2961AB;
 }
 
 @media (max-width: 992px) {
