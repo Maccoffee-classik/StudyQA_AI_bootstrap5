@@ -9,6 +9,10 @@
   color: #FFFFFF;
 }
 
+.min-w-250 {
+  min-width: 250px;
+}
+
 /*ШРИФТЫ*/
 @font-face {
   font-family: "Montserrat";
@@ -375,6 +379,11 @@ button {
   content: "3";
 }
 
+.blue-divider {
+  height: 50px;
+  background: url("/img/relumewebflow.svg") repeat-x center, #2961AB;
+}
+
 @media (max-width: 992px) {
   .section-faq-title {
     margin: 50px 0;
@@ -436,6 +445,14 @@ button {
   border-radius: 25px;
   padding: 32px;
   height: 100%;
+}
+.card-group__item-wrapper-text {
+  background: #fafaff;
+  border-radius: 25px;
+  height: 100%;
+  padding: 10px 0;
+  position: relative;
+  margin-top: -25px;
 }
 .card-group__item-image {
   margin-bottom: 24px;
@@ -687,6 +704,12 @@ button {
     font-size: 30px;
   }
 }
+.marketing-block__subtitle {
+  font-family: "Core Sans C", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 150%;
+}
 .marketing-block__description {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -713,6 +736,13 @@ button {
   font-weight: 800;
   font-size: 18px;
   line-height: 140%;
+}
+.marketing-block__card-title-fs96 {
+  font-family: "Core Sans C", sans-serif;
+  font-weight: 800;
+  font-weight: 800;
+  line-height: 140%;
+  font-size: 96px;
 }
 .marketing-block__image {
   max-width: 100%;

@@ -41,8 +41,16 @@
       border-radius: 25px;
       padding:  32px;
       height: 100%;
-
+      &-text {
+        background: #fafaff;
+        border-radius: 25px;
+        height: 100%;
+        padding:  10px 0;
+        position: relative;
+        margin-top: -25px;
+      }
     }
+
     &-image {
       margin-bottom: 24px;
     }
@@ -101,6 +109,9 @@
   background: #fafaff;
   @media (max-width: $large-screen) {
     padding: 20px;
+  }
+  &__img {
+
   }
   &__title {
     @include coresans(800);
@@ -267,6 +278,11 @@
       font-size: 30px;
     }
   }
+  &__subtitle {
+    @include coresans(800);
+    font-size: 18px;
+    line-height: 150%;
+  }
 
 
   &__description {
@@ -296,6 +312,12 @@
     font-weight: 800;
     font-size: 18px;
     line-height: 140%;
+  }
+  &__card-title-fs96 {
+    @include coresans(800);
+    font-weight: 800;
+    line-height: 140%;
+    font-size: 96px;
   }
 
   &__image {

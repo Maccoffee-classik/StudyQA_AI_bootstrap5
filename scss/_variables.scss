@@ -12,6 +12,9 @@ $color-white50pr: rgba(255, 255, 255, 0.5);
 .highlight-white {
   color: $color-white;
 }
+.min-w-250 {
+  min-width: 250px;
+}
 
 /*ШРИФТЫ*/
 $font-path: "../fonts/"; // Путь к папке со шрифтами

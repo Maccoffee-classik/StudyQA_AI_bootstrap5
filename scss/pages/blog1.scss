@@ -1,0 +1,8 @@
+@use '../responsive'as *;
+@use '../variables'as *;
+@use '../mixins'as *;
+
+.blue-divider {
+  height: 50px;
+  background: url("/img/relumewebflow.svg") repeat-x center , $color-blue;
+}
