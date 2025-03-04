@@ -772,6 +772,125 @@ button {
   }
 }
 
+/*секция со слайдером*/
+.card-slider {
+  overflow: hidden;
+  text-align: center;
+  padding: 62px 0;
+}
+.card-slider__title {
+  font-family: "Core Sans C", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 120%;
+  margin-bottom: 80px;
+}
+@media (max-width: 992px) {
+  .card-slider__title {
+    font-size: 30px;
+  }
+}
+.card-slider__subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+}
+.card-slider__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card-slider__image {
+  border-radius: 25px;
+  width: 100%;
+}
+.card-slider__item {
+  text-align: center;
+  padding: 20px;
+}
+.card-slider__item-tab {
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  background: #fafaff;
+  border-radius: 5px;
+  padding: 4px 8px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  margin-right: 16px;
+}
+.card-slider__item-timer {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+}
+.card-slider__item-wrapper {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  background: #fafaff;
+  border-radius: 25px;
+  padding: 32px;
+  height: 100%;
+}
+.card-slider__item-wrapper-text {
+  background: #fafaff;
+  border-radius: 25px;
+  height: 100%;
+  padding: 10px 0;
+  position: relative;
+  margin-top: -25px;
+}
+.card-slider__item-image {
+  margin: -32px -32px 24px -32px;
+}
+.card-slider__item-title {
+  font-family: "Core Sans C", sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 140%;
+  margin-bottom: 24px;
+}
+.card-slider__item-subtitle {
+  font-family: "Core Sans C", sans-serif;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 120%;
+  text-align: right;
+  padding: 48px 0 16px;
+}
+.card-slider__item-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+}
+.card-slider__item-link {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration: none;
+  cursor: pointer;
+  color: #000000;
+}
+.card-slider__item-link:after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 24%;
+  left: 100px;
+  background: url("../img/arrow_link.svg") no-repeat;
+  margin: 0 8px;
+  width: 100%;
+  height: 100%;
+  filter: invert(1) grayscale(1) brightness(0);
+}
+.card-slider__item-link:hover {
+  text-decoration: underline;
+}
+
 .registration-form__input {
   font-size: 16px;
   padding: 12px;
