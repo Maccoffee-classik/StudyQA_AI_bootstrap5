@@ -519,11 +519,15 @@ button {
 .unique-testimonial .custom-testimonials__look-all {
   color: #FFFFFF;
   margin-top: 30px;
+  cursor: pointer;
+  margin-left: auto;
+  max-width: 200px;
 }
 @media (max-width: 992px) {
   .unique-testimonial .custom-testimonials__look-all {
     position: absolute;
     top: 40px;
+    margin: auto;
   }
 }
 .unique-testimonial .carousel-indicators [data-bs-target] {
@@ -691,6 +695,8 @@ button {
 .custom-testimonials__look-all {
   cursor: pointer;
   display: block;
+  margin-left: auto;
+  max-width: 200px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   margin-top: -25px;
@@ -702,9 +708,8 @@ button {
 }
 @media (max-width: 992px) {
   .custom-testimonials__look-all {
-    margin-top: 0;
     text-align: center;
-    margin-bottom: 40px;
+    margin: 0 auto 40px;
   }
 }
 .custom-testimonials .carousel {

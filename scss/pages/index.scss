@@ -119,6 +119,8 @@
   &__look-all {
     cursor: pointer;
     display: block;
+    margin-left: auto;
+    max-width: 200px;
     @include montserrat(400);
     margin-top: -25px;
     text-align: right;
@@ -127,9 +129,10 @@
     line-height: 150%;
     text-decoration: underline;
     @media (max-width: $large-screen) {
-      margin-top: 0;
+
       text-align: center;
-      margin-bottom: 40px;
+
+      margin: 0 auto 40px;
     }
   }
 
