@@ -1,0 +1,29 @@
+@use '../responsive'as *;
+@use '../variables'as *;
+@use '../mixins'as *;
+
+.banner-block-consultation {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media (max-width: $large-screen) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  &__wrapper {
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+  }
+  &__img-stars-bot {
+    position: absolute;
+    bottom: -24px;
+    left: -24px;
+    width: 100px;
+  }
+  &__img-stars-top {
+    position: absolute;
+    top: -24px;
+    right: -24px;
+    width: 100px;
+  }
+}
