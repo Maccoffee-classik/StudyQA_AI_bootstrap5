@@ -200,6 +200,7 @@
 }
 
 .carousel-control-prev {
+  z-index: 3!important;
   left: 50% !important;
   top: calc(-100% - 30px)!important;
   @media (max-width: $large-screen) {
@@ -207,6 +208,7 @@
   }
 }
 .carousel-control-next {
+  z-index: 3!important;
   right: 100px !important;
   top: calc(-100% - 30px)!important;
   @media (max-width: $large-screen) {
