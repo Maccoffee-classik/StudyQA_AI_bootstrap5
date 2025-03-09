@@ -758,6 +758,25 @@ button {
   height: 56px;
   border-radius: 80px;
 }
+.custom-testimonials__author-avatar {
+  width: 56px !important;
+  height: 56px;
+  border-radius: 80px;
+}
+.custom-testimonials__author-timer {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  position: relative;
+  margin-left: 5px;
+}
+.custom-testimonials__author-timer:before {
+  content: "•";
+  top: 0;
+  left: -6px;
+  position: absolute;
+}
 .custom-testimonials__name {
   font-weight: bold;
   display: block;
@@ -1235,8 +1254,8 @@ button {
 }
 .card-slider__subtitle {
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 18px;
+  font-weight: 600;
+  font-size: 14px;
   line-height: 150%;
 }
 .card-slider__list {
@@ -1332,6 +1351,78 @@ button {
 }
 .card-slider__item-link:hover {
   text-decoration: underline;
+}
+
+.owl-nav {
+  position: absolute;
+  display: flex !important;
+  bottom: -34px !important;
+  width: 50%;
+  justify-content: flex-start;
+  gap: 90%;
+  left: 38px;
+  z-index: 2;
+}
+
+.owl-prev, .owl-next {
+  content: none;
+  z-index: 3;
+  width: 40px;
+  height: 40px;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+.owl-prev span, .owl-next span {
+  color: transparent;
+}
+
+.owl-prev {
+  left: 50% !important;
+  background-image: url("../img/arrow-grey-left.svg") !important;
+}
+
+.owl-next {
+  right: 100px !important;
+  background-image: url("../img/arrow-gley-right.svg") !important;
+}
+
+@media (max-width: 1024px) { /* Адаптация под $large-screen */
+  .owl-prev {
+    left: 0 !important;
+  }
+  .owl-next {
+    right: 0 !important;
+  }
+}
+/* Стили для индикаторов (dots) */
+.owl-dots {
+  display: flex !important;
+  position: absolute;
+  bottom: -24px !important;
+  left: 65px;
+  display: flex;
+  justify-content: flex-start;
+  width: 40%;
+  z-index: 2;
+}
+
+@media (max-width: 1024px) {
+  .owl-dots {
+    right: 0 !important;
+  }
+}
+.owl-dot {
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 100% !important;
+  background-color: #d9d9d9 !important;
+  margin: 0 3px;
+  transition: opacity 0.6s ease;
+}
+
+.owl-dot.active {
+  background-color: #007bff !important; /* заменил $color-blue на стандартный синий */
 }
 
 .registration-form__input {
