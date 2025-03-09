@@ -1240,6 +1240,11 @@ button {
   text-align: center;
   padding: 62px 0;
 }
+@media (max-width: 992px) {
+  .card-slider .custom-testimonials__look-all {
+    top: 50px;
+  }
+}
 .card-slider__title {
   font-family: "Core Sans C", sans-serif;
   font-weight: 800;
@@ -1363,6 +1368,12 @@ button {
   left: 38px;
   z-index: 2;
 }
+@media (max-width: 992px) {
+  .owl-nav {
+    width: 100%;
+    left: 0;
+  }
+}
 
 .owl-prev, .owl-next {
   content: none;
@@ -1405,6 +1416,11 @@ button {
   justify-content: flex-start;
   width: 40%;
   z-index: 2;
+}
+@media (max-width: 992px) {
+  .owl-dots {
+    width: 80%;
+  }
 }
 
 @media (max-width: 1024px) {

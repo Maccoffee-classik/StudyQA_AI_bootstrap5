@@ -345,6 +345,11 @@
   overflow: hidden;
   text-align: center;
   padding: 62px 0;
+  .custom-testimonials__look-all {
+    @media (max-width: $large-screen) {
+      top: 50px;
+    }
+  }
   &__title {
     @include coresans(800);
     font-size: 40px;
@@ -468,6 +473,11 @@
   gap: 90%;
   left: 38px;
   z-index: 2;
+  @media (max-width: $large-screen) {
+    width: 100%;
+    left: 0;
+  }
+
 }
 
 
@@ -514,6 +524,9 @@
   justify-content: flex-start;
   width: 40%;
   z-index: 2;
+  @media (max-width: $large-screen) {
+    width: 80%;
+  }
 
 }
 
