@@ -718,7 +718,7 @@ button {
 .custom-testimonials__card {
   padding: 20px;
   border-radius: 15px;
-  min-height: 300px;
+  min-height: 350px;
   max-width: 500px;
   margin: 25px auto;
   text-align: left;
@@ -1439,6 +1439,37 @@ button {
 
 .owl-dot.active {
   background-color: #007bff !important; /* заменил $color-blue на стандартный синий */
+}
+
+.partners {
+  text-align: center;
+  padding: 50px 0;
+}
+.partners h2 {
+  text-align: left;
+  font-family: "Core Sans C", sans-serif;
+  font-weight: 800;
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+.partners .row {
+  justify-content: center;
+}
+.partners .partner-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.partners .partner-logo img {
+  max-width: 100%;
+  height: auto;
+  filter: grayscale(0%);
+  transition: 0.3s;
+}
+.partners .partner-logo img:hover {
+  filter: grayscale(100%);
+  transform: scale(1.1);
 }
 
 .registration-form__input {
